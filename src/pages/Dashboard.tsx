@@ -2,10 +2,9 @@ import React from 'react';
 import { useStudyOS } from '../context/StudyOSContext';
 import { useProgress } from '../hooks/useProgress';
 import { UNITS, SUBJECTS } from '../constants';
-import { CheckCircle2, Circle, Clock, Flame, Trophy, Target } from 'lucide-react';
+import { CheckCircle2, Clock, Flame, Trophy, Target } from 'lucide-react';
 
 const HeroGreeting: React.FC = () => {
-  const { state } = useStudyOS();
   const now = new Date();
   const options: Intl.DateTimeFormatOptions = { weekday: 'long', month: 'long', day: 'numeric' };
   

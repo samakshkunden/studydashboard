@@ -1,5 +1,5 @@
 import { useStudyOS } from '../context/StudyOSContext';
-import { UNITS, SUBJECTS } from '../constants';
+import { UNITS } from '../constants';
 
 export const useProgress = () => {
   const { state } = useStudyOS();

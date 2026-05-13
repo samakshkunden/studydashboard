@@ -1,4 +1,4 @@
-import { Subject, Unit, GymSession, SubjectId } from '../types';
+import type { Subject, Unit, GymSession, SubjectId } from '../types';
 
 export const SUBJECTS: Subject[] = [
   {

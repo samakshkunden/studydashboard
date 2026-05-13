@@ -18,7 +18,6 @@ const CustomTooltip = ({ active, payload }: any) => {
 };
 
 export const Analytics: React.FC = () => {
-  const { state } = useStudyOS();
   const { calculateSubjectProgress } = useProgress();
   
   const cumulativeData = [

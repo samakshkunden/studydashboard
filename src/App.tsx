@@ -1,4 +1,3 @@
-import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { StudyOSProvider } from './context/StudyOSContext';
 import { Layout } from './components/Layout';

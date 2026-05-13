@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useReducer, useEffect } from 'react';
-import { AppState } from '../types';
-import { INITIAL_STATE, stateManager } from './state-manager';
+import type { AppState } from '../types';
+import { stateManager } from './state-manager';
 
 type StateAction = 
   | { type: 'SET_UNIT_STATUS'; unitId: string; status: AppState['unitProgress'][string]['status'] }

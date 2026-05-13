@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { useStudyOS } from '../context/StudyOSContext';
 import { EXAM_DAYS } from '../constants';
-import { Calendar as CalIcon, ChevronLeft, ChevronRight, Info, AlertCircle } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Info, AlertCircle } from 'lucide-react';
 
 const CalendarDay: React.FC<{ 
   date: string; 

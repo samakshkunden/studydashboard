@@ -74,11 +74,6 @@ const UnitAccordion: React.FC<{
 }> = ({ unit, status, onToggleTopic, onSetStatus }) => {
   const [isOpen, setIsOpen] = useState(false);
   
-  const isAllTopicsDone = unit.topics.every(t => {
-    // This is a simplified check; in reality, we'd check the state
-    return false; // Handled by parent's status mapping
-  });
-
   return (
     <div className="mb-4 rounded-xl border border-border-default overflow-hidden bg-bg-surface transition-all hover:border-border-strong">
       <div 
@@ -202,6 +197,16 @@ export const Subjects: React.FC = () => {
                     onToggleTopic={handleToggleTopic}
                     onSetStatus={handleSetStatus}
                   />
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+    />
                 ))}
               </div>
             </div>

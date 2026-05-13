@@ -80,7 +80,7 @@ const SessionCard: React.FC<{ session: typeof GYM_SCHEDULE[0] }> = ({ session })
 };
 
 export const Workout: React.FC = () => {
-  const todayStr = new Date().toLocaleDateString('en-US', { weekday: 'lowercase' }) as any;
+  const todayStr = new Date().toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase() as any;
   const todaySession = GYM_SCHEDULE.find(s => s.day === todayStr);
 
   return (
