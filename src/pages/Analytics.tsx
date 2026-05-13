@@ -1,7 +1,7 @@
 import React from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, PieChart, Pie, Cell, Legend } from 'recharts';
 import { useStudyOS } from '../context/StudyOSContext';
-import { UNITS, SUBJECTS } from '../constants';
+import { SUBJECTS } from '../constants';
 import { useProgress } from '../hooks/useProgress';
 import { TrendingUp, Activity, Target, Zap } from 'lucide-react';
 
@@ -19,7 +19,7 @@ const CustomTooltip = ({ active, payload }: any) => {
 
 export const Analytics: React.FC = () => {
   const { state } = useStudyOS();
-  const { calculateOverallProgress, calculateSubjectProgress } = useProgress();
+  const { calculateSubjectProgress } = useProgress();
   
   const cumulativeData = [
     { date: 'May 01', units: 0 },
@@ -143,20 +143,3 @@ export const Analytics: React.FC = () => {
     </div>
   );
 };
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export const Analytics: React.FC = () => {
-  return <AnalyticsView />;
-};
-
-// Fixed naming for the actual exported component
-const AnalyticsView: React.FC = () => {
-    // This is just to wrap the logic inside one exported component
-    // I'll just redefine the functional component as the export
-    return null; // This is a placeholder, I'll rewrite the export below
-}
