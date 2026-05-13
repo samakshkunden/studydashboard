@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* === BACKGROUNDS === */
+  --bg-base:         #0A0A0F;
+  --bg-surface:      #111118;
+  --bg-elevated:     #18181F;
+  --bg-subtle:       #1E1E28;
+  --bg-overlay:      rgba(10, 10, 15, 0.85);
+
+  /* === BORDERS === */
+  --border-default:  #2A2A38;
+  --border-strong:   #3A3A4E;
+  --border-glow:     rgba(94, 234, 212, 0.25);
+
+  /* === BRAND ACCENT === */
+  --accent-primary:      #5EEAD4;
+  --accent-primary-dim:  #2DD4BF;
+  --accent-primary-muted:#0D3D38;
+  --accent-primary-glow: rgba(94, 234, 212, 0.15);
+
+  /* === STATUS COLORS === */
+  --status-complete:     #4ADE80;
+  --status-complete-bg:  #052E16;
+  --status-revision:     #FACC15;
+  --status-revision-bg:  #1C1500;
+  --status-pending:      #64748B;
+  --status-pending-bg:   #1A1F2E;
+  --status-exam:         #F87171;
+  --status-exam-bg:      #2D0A0A;
+  --status-active:       #5EEAD4;
+  --status-active-bg:    #0D3D38;
+  --status-football:     #FB923C;
+  --status-gym:          #A78BFA;
+
+  /* === SUBJECT COLORS === */
+  --subject-mechanics:   #60A5FA;
+  --subject-m2:          #C084FC;
+  --subject-physics:     #34D399;
+  --subject-bee:         #FBBF24;
+  --subject-pps:         #F472B6;
+
+  /* === TYPOGRAPHY COLORS === */
+  --text-primary:    #F1F5F9;
+  --text-secondary:  #94A3B8;
+  --text-muted:      #475569;
+  --text-accent:     #5EEAD4;
+  --text-inverse:    #0A0A0F;
+
+  /* === TYPOGRAPHY === */
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+
+  /* === TYPE SCALE === */
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+
+  /* === SPACING === */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  /* === RADIUS === */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-2xl:  24px;
+  --radius-full: 9999px;
+
+  /* === MOTION === */
+  --ease-smooth:  cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce:  cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-snappy:  cubic-bezier(0.25, 0, 0, 1);
+
+  --duration-fast:   150ms;
+  --duration-normal: 250ms;
+  --duration-slow:   400ms;
+  --duration-page:   600ms;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
