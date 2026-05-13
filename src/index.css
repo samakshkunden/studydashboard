@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,54 +6,54 @@
 
 :root {
   /* === BACKGROUNDS === */
-  --bg-base:         #0A0A0F;
-  --bg-surface:      #111118;
-  --bg-elevated:     #18181F;
-  --bg-subtle:       #1E1E28;
-  --bg-overlay:      rgba(10, 10, 15, 0.85);
+  --bg-base:         #0a0a0a;
+  --bg-surface:      #141414;
+  --bg-elevated:     #1e1e1e;
+  --bg-subtle:       #262626;
+  --bg-overlay:      rgba(10, 10, 10, 0.85);
 
   /* === BORDERS === */
-  --border-default:  #2A2A38;
-  --border-strong:   #3A3A4E;
-  --border-glow:     rgba(94, 234, 212, 0.25);
+  --border-default:  #333333;
+  --border-strong:   #444444;
+  --border-glow:     rgba(0, 122, 255, 0.25);
 
   /* === BRAND ACCENT === */
-  --accent-primary:      #5EEAD4;
-  --accent-primary-dim:  #2DD4BF;
-  --accent-primary-muted:#0D3D38;
-  --accent-primary-glow: rgba(94, 234, 212, 0.15);
+  --accent-primary:      #007AFF;
+  --accent-primary-dim:  #0056b3;
+  --accent-primary-muted:#002b5c;
+  --accent-primary-glow: rgba(0, 122, 255, 0.4);
 
   /* === STATUS COLORS === */
-  --status-complete:     #4ADE80;
-  --status-complete-bg:  #052E16;
-  --status-revision:     #FACC15;
-  --status-revision-bg:  #1C1500;
-  --status-pending:      #64748B;
-  --status-pending-bg:   #1A1F2E;
-  --status-exam:         #F87171;
-  --status-exam-bg:      #2D0A0A;
-  --status-active:       #5EEAD4;
-  --status-active-bg:    #0D3D38;
-  --status-football:     #FB923C;
-  --status-gym:          #A78BFA;
+  --status-complete:     #4ade80;
+  --status-complete-bg:  #064e3b;
+  --status-revision:     #facc15;
+  --status-revision-bg:  #422006;
+  --status-pending:      #64748b;
+  --status-pending-bg:   #1e293b;
+  --status-exam:         #f87171;
+  --status-exam-bg:      #7f1d1d;
+  --status-active:       #007aff;
+  --status-active-bg:    #002b5c;
+  --status-football:     #fb923c;
+  --status-gym:          #a78bfa;
 
   /* === SUBJECT COLORS === */
-  --subject-mechanics:   #60A5FA;
-  --subject-m2:          #C084FC;
-  --subject-physics:     #34D399;
-  --subject-bee:         #FBBF24;
-  --subject-pps:         #F472B6;
+  --subject-mechanics:   #60a5fa;
+  --subject-m2:          #c084fc;
+  --subject-physics:     #34d399;
+  --subject-bee:         #fbbf24;
+  --subject-pps:         #f472b6;
 
   /* === TYPOGRAPHY COLORS === */
-  --text-primary:    #F1F5F9;
-  --text-secondary:  #94A3B8;
-  --text-muted:      #475569;
-  --text-accent:     #5EEAD4;
-  --text-inverse:    #0A0A0F;
+  --text-primary:    #ffffff;
+  --text-secondary:  #a1a1aa;
+  --text-muted:      #71717a;
+  --text-accent:     #007aff;
+  --text-inverse:    #0a0a0a;
 
   /* === TYPOGRAPHY === */
-  --font-display: 'Syne', sans-serif;
-  --font-body:    'DM Sans', sans-serif;
+  --font-display: 'Inter', sans-serif;
+  --font-body:    'Inter', sans-serif;
   --font-mono:    'JetBrains Mono', monospace;
 
   /* === TYPE SCALE === */
