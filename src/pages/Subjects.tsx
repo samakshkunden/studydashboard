@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useStudyOS } from '../context/StudyOSContext';
-import { useProgress } from '../hooks/useProgress';
 import { SUBJECTS, UNITS } from '../constants';
 import { ChevronDown, ChevronUp, CheckCircle2, Circle, BookOpen, Info } from 'lucide-react';
 
@@ -197,16 +196,6 @@ export const Subjects: React.FC = () => {
                     onToggleTopic={handleToggleTopic}
                     onSetStatus={handleSetStatus}
                   />
-                ))}
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-};
-    />
                 ))}
               </div>
             </div>

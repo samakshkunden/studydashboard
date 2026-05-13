@@ -1,6 +1,5 @@
 import React from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, PieChart, Pie, Cell, Legend } from 'recharts';
-import { useStudyOS } from '../context/StudyOSContext';
 import { SUBJECTS } from '../constants';
 import { useProgress } from '../hooks/useProgress';
 import { TrendingUp, Activity, Target, Zap } from 'lucide-react';

@@ -1,11 +1,10 @@
 import React from 'react';
-import { useStudyOS } from '../context/StudyOSContext';
 import { GYM_SCHEDULE } from '../constants';
-import { Dumbbell, CheckCircle2, Circle, ChevronRight, Calendar as CalIcon } from 'lucide-react';
+import { Dumbbell, Circle, Calendar as CalIcon } from 'lucide-react';
 
 const WeeklyGlance: React.FC = () => {
   const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-  const today = new Date().toLocaleDateString('en-US', { weekday: 'lowercase' }) as any;
+  const today = new Date().toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase();
 
   return (
     <div className="flex gap-2 overflow-x-auto pb-6 mb-10 animate-in fade-in slide-in-from-top-4 duration-page">
@@ -80,7 +79,7 @@ const SessionCard: React.FC<{ session: typeof GYM_SCHEDULE[0] }> = ({ session })
 };
 
 export const Workout: React.FC = () => {
-  const todayStr = new Date().toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase() as any;
+  const todayStr = new Date().toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase();
   const todaySession = GYM_SCHEDULE.find(s => s.day === todayStr);
 
   return (
